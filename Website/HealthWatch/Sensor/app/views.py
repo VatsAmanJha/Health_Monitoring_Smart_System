@@ -34,8 +34,8 @@ PULSE_RATE_LOW_THRESHOLD = 60  # beats per minute
 SPO2_HIGH_THRESHOLD = 100  # percentage (assuming it can't exceed 100)
 SPO2_LOW_THRESHOLD = 90  # percentage
 
-account_sid = "ACfcb4ff679b2ffe82d4d74b2c922701e0"
-auth_token = "d09b6bf5ba5d2047dc369623c96b760b"
+account_sid = "...."
+auth_token = "...."
 client = Client(account_sid, auth_token)
 
 
@@ -49,15 +49,15 @@ def body_temp(request):
     # new_value = 100
     if new_value >= BODY_TEMP_HIGH_THRESHOLD_F:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="High body temperature detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
     elif new_value <= BODY_TEMP_LOW_THRESHOLD_F:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="Low body temperature detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
     # Create or update HealthParameter instance with the new value
     obj = StoredData()
@@ -101,15 +101,15 @@ def env_temp(request):
 
     if new_value >= ENV_TEMP_HIGH_THRESHOLD_F:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="High environmental temperature detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
     elif new_value <= ENV_TEMP_LOW_THRESHOLD_F:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="Low environmental temperature detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
 
     # Create or update HealthParameter instance with the new value
@@ -151,15 +151,15 @@ def gases(request):
 
     if new_value >= AIR_QUALITY_HIGH_THRESHOLD:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="High air quality detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
     elif new_value <= AIR_QUALITY_LOW_THRESHOLD:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="Low air quality detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
 
     # Create or update HealthParameter instance with the new value
@@ -201,15 +201,15 @@ def pulse_rate(request):
 
     if new_value >= PULSE_RATE_HIGH_THRESHOLD:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="High pulse rate detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
     elif new_value <= PULSE_RATE_LOW_THRESHOLD:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="Low pulse rate detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
 
     # Create or update HealthParameter instance with the new value
@@ -251,15 +251,15 @@ def spO2(request):
 
     if new_value >= SPO2_HIGH_THRESHOLD:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="High oxygen saturation detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
     elif new_value <= SPO2_LOW_THRESHOLD:
         message = client.messages.create(
-            from_="whatsapp:+14155238886",
+            from_="...",
             body="Low oxygen saturation detected!",
-            to="whatsapp:+916267247624",
+            to="...",
         )
 
     # Create or update HealthParameter instance with the new value
