@@ -14,7 +14,7 @@ from twilio.rest import Client
 # serviceKey = os.path.join(BASE_DIR, "serviceKey.json")
 # cred = credentials.Certificate(serviceKey)
 # firebase_admin.initialize_app(
-#     cred, {"databaseURL": "https://fir-386c7-default-rtdb.firebaseio.com"}
+#     cred, {"databaseURL": "XYZ"}
 # )
 # data = db.reference("Data")
 
