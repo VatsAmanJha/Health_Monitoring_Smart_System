@@ -1,0 +1,22 @@
+Sensor:
+1.DHT22
+2.MAX30100
+4.sound detection sensors
+5.MQ gas sensors
+6.MLX90614 
+
+Microcontrolar:
+1.Arduino Uno
+
+Connectivity:
+1.ESP32[wifi]
+
+GPS:
+1.NEO-6M GPS Receiver Module
+
+Display:
+1.Alphanumeric Display
+
+For SMS Alert:
+1.Arduino GSM Shield
+
